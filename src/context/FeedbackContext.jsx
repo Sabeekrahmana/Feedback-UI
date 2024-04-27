@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { createContext, useState } from "react";
-// import { v4 as uuidv4 } from "uuid";
+import { v4 as  uuidv4} from "uuid";
 
 const FeedbackContext = createContext();
 
@@ -34,6 +34,7 @@ export const FeedbackProvider = ({ children }) => {
       body: JSON.stringify(newFeedback)
     })
 
+    newFeedback.id = uuidv4();
     const data = await response.json()  
     setFeedback([data, ...feedback]);
   };
@@ -61,6 +62,7 @@ export const FeedbackProvider = ({ children }) => {
       },
       body: JSON.stringify(updItem)
     })
+
 
     const data = await response.json()
     setFeedback(

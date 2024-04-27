@@ -15,7 +15,8 @@ const FeedbackLists = ({ handleDelete }) => {
 
   return isLoading ?(
     <Spinner />
-    ):(
+    ):
+    (
   //  Animation----->
   <AnimatePresence>
     <div className="feedback-list">

@@ -11,9 +11,14 @@
       "text": "This feedack item 3 is coming from BackEnd"
     },
     {
-      "id": "2af3",
-      "text": "Assalamu alaikum varah...",
-      "rating": 1
+      "id": "5d7d",
+      "text": "This feedback item 1 is coming from BackEnd",
+      "rating": 2
+    },
+    {
+      "id": "1d3f",
+      "text": "alhamdhulillah",
+      "rating": 10
     }
   ]
 }
